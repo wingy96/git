@@ -1,3 +1,9 @@
+:root {
+    --color-gray: rgb(224,224,219);
+    --color-darker-gray: rgb(200, 200, 195);
+    --color-btn-hover: rgb(27, 20, 99);
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     max-width: 1440px;
@@ -64,12 +70,12 @@ h1, h2, h3 {
 .information {
     margin-right: 0%;
     padding: 1rem;
-    background-color: rgb(200, 200, 195);
+    background-color: var(--color-darker-gray);
     font-size: 160%;
 }
 
 .take-action {
-    background-color: rgb(224,224,219);
+    background-color: var(--color-gray);
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -82,16 +88,16 @@ h1, h2, h3 {
     text-decoration: none;
     background-color: cadetblue;
     padding: 1rem;
-    font-size: 150%;
+    font-size: 32px;
     transition: all .5s;
     color: white;
 }
 
 .take-action a:hover { 
-    background-color: rgb(27, 20, 99);
+    background-color: var(--color-btn-hover);
 }
 
-footer {
+.contact {
     background-image: url(../images/neature.jpg);
     background-position: fixed;
     background-position: bottom center;
@@ -105,20 +111,40 @@ footer {
     font-size: 2rem;
 }
 
-footer a {
+.contact a {
     display: flex;
     justify-content: center;
     text-decoration: none;
     background-color: cadetblue;
-    padding: 1rem;
-    font-size: 60%;
     transition: all .5s;
     color: white;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 32px;
+    transition: all .5s;
+    color: white;
+    max-width: 250px;
+    max-height: 32px;
 }
 
-footer a:hover {
-    background-color: rgb(27, 20, 99);
+.contact a:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    background-color: var(--color-darker-gray);
+}
+
+.footer-info ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (min-width: 600px){
@@ -129,11 +155,6 @@ footer a:hover {
 }
 
 .hero ul {
-    list-style: none;
-    padding-left: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-right: 0%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -146,7 +167,6 @@ footer a:hover {
 
 .take-action {
     display: grid;
-
 }
 
 .take-action h2 {
@@ -165,8 +185,18 @@ footer a:hover {
     margin-top: -150px;
 }
 
-footer a {
-    max-width: 250px;
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 
+.contact h2 {
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 1%;
+}
+
+.contact a {
+    max-width: 250px;
+    max-height: 32px;
+    margin-left: 140px;
 }
