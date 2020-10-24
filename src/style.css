@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 .hero h1 {
     font-size: 3rem;
-    max-width: 50rem;
+    padding-top: -10%;
 }
 
 .hero article a {
@@ -199,4 +199,5 @@ h1, h2, h3 {
     max-width: 250px;
     max-height: 32px;
     margin-left: 140px;
+}
 }
